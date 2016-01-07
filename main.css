@@ -1,0 +1,40 @@
+body
+{
+    background: url("./images/bg_main.jpg");
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header
+{
+	font-size: 45px;
+	font-family: "Callibri";
+	color: #ffbf00;
+}
+
+.button
+{
+	background-color: black;
+	color: #ffffff;
+	font-family: "NanumGothic";
+	text-align: center;
+	font-size: 18px;
+	margin-top: 120px;
+	width: 130px;
+	border-radius: 25px;
+	margin-left: 160px;
+	margin-right: 160px;
+	float:left;
+	transition: background-color 0.5s;
+	-webkit-transition: background-color 0.5s;
+	-moz-transition: background-color 0.5s;
+	-o-transition: background-color 0.5s;
+}
+
+.button:hover
+{
+	background-color: #3d253d;
+	color: #facc2e;
+}
