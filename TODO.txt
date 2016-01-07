@@ -1,1 +1,1 @@
-1. To make one player game in which user starts and computer plays most optimally.
+1. To make one player game in which user starts and computer plays most optimally to win or draw.

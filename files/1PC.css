@@ -14,6 +14,14 @@ h1
 	color:#bfbf00;
 }
 
+.hard
+{
+	font-size: 25px; 
+	font-family: "Callibri"; 
+	color: #ffbf00;	
+	text-align: center;
+}
+
 .button-left
 {
 	background-color: black;
