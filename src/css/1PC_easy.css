@@ -1,6 +1,6 @@
 body
 {
-	background-image:url(../images/bg_main.jpg);
+	background-image:url(../../images/bg_main.jpg);
 	background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -12,6 +12,14 @@ h1
 	font-size: 65px; 
 	font-family: "Callibri"; 
 	color:#bfbf00;
+}
+
+.easy
+{
+	font-size: 25px; 
+	font-family: "Callibri"; 
+	color: #febf00;	
+	text-align: center;
 }
 
 .button-left
