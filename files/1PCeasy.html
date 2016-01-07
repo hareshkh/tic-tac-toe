@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>One Player - Tic Tac Toe</title>
-	<link rel="stylesheet" type="text/css" href="2P.css">
+	<link rel="stylesheet" type="text/css" href="1PCeasy.css">
 </head>
 <body>
 	<div>
@@ -13,7 +13,7 @@
 		</a>
 	</div>
 	<div>
-		<a href="1PC.html">
+		<a href="1PCeasy.html">
 			<div class="button-right">
 				<p>Refresh</p>
 			</div>
@@ -22,7 +22,10 @@
 	<center>
 			<h1>TIC TAC TOE - ONE PLAYER</h1>
 	</center>
-	<br><br><br><br>
+	<div class="easy">
+		<h2>EASY</h2>
+	</div>
+	<br><br><br>
 	<center>
 		<canvas id="gameSpace" width="300" height="300"></canvas>
 	</center>
@@ -63,7 +66,7 @@
 		context.closePath();
 
 		alert("I start first with my favourite 'O'. Try beatin' me!");
-
+		
 		var a = new Array(3);
 		for(var i=0;i<3;i++)
 		{
@@ -445,94 +448,23 @@
 
 			else
 			{
-				specialMove();
+				randomMove();
 			}	
 		}
 
-		function specialMove()
+		function randomMove()
 		{
-			if (a[0][0]==1 && a[1][1]==2 && sum==3)
+			for(var i=0;i<3;i++)
 			{
-				a[2][2]++;
-				counter++;
-				context.fillText("O",215,280);
-			}//5
-
-			else if (a[0][0]==1 && a[2][1]==2 && sum==3)
-			{
-				a[0][2]++;
-				counter++;
-				context.fillText("O",215,80);
-			}//4.1
-
-			else if (a[0][0]==1 && a[1][2]==2 && sum==3)
-			{
-				a[2][0]++;
-				counter++;
-				context.fillText("O",15,280);
-			}//4.2
-
-			else if (a[0][0]==1 && a[2][2]==2 && sum==3)
-			{
-				a[2][0]++;
-				counter++;
-				context.fillText("O",15,280);
-			}//3_1
-
-			else if (a[2][0]==1 && a[1][0]==2 && a[0][0]==1 && a[2][2]==2 && sum==6)
-			{
-				a[0][2]++;
-				counter++;
-				context.fillText("O",215,80);
-			}//3_2
-
-			else if (a[0][0]==1 && (a[0][2]==2||a[2][0]==2) && sum==3)
-			{
-				a[2][2]++;
-				counter++;
-				context.fillText("O",215,280);
-			}//2.1 and 2.2
-
-			else if (a[0][0]==1 && a[0][1]==2 && sum==3)
-			{
-				a[2][0]++;
-				counter++;
-				context.fillText("O",15,280);
-			}//1.1_1
-
-			else if (a[0][0]==1 && a[0][1]==2 && a[2][0]==1 && a[1][0]==2 && sum==6)
-			{
-				a[1][1]++;
-				counter++;
-				context.fillText("O",115,180);
-			}//1.1_2
-
-			else if (a[0][0]==1 && a[1][0]==2 && sum==3)
-			{
-				a[0][2]++;
-				counter++;
-				context.fillText("O",215,80);
-			}//1.2_1
-
-			else if (a[0][0]==1 && a[1][0]==2 && a[0][2]==1 && a[0][1]==2 && sum==6)
-			{
-				a[1][1]++;
-				counter++;
-				context.fillText("O",115,180);
-			}//1.2_2
-
-			else
-			{
-				for(var i=0;i<3;i++)
+				for (var j=0;j<3;j++)
 				{
-					for (var j=0;j<3;j++)
+					if (a[i][j]==0)
 					{
-						if (a[i][j]==0)
-						{
-							a[i][j]++;
-							counter++;
-							context.fillText("O",(15+(i*100)),(80+(j*100)));
-						}
+						a[i][j]++;
+						counter++;
+						context.fillText("O",(15+(j*100)),(80+(i*100)));
+						i=3;
+						j=3;
 					}
 				}
 			}
