@@ -187,137 +187,140 @@ function clicker (event)
 
 function check(event)
 {
-	var bool = false;
-	if (a[0][0]==a[0][1] && a[0][1]==a[0][2])
+	if (!oncewin)
 	{
-		if (a[0][0]==1)
+		var bool = false;
+		if (a[0][0]==a[0][1] && a[0][1]==a[0][2])
 		{
-			alert("Player 1 wins!");
-			bool = true; oncewin = true; 
-			oncewin = true;
+			if (a[0][0]==1)
+			{
+				alert("Player 1 wins!");
+				bool = true;
+				oncewin = true;
+			}
+			else if(a[0][0]==2)
+			{
+				alert("Player 2 wins!");
+				bool = true;
+				oncewin = true;
+			}
 		}
-		else if(a[0][0]==2)
-		{
-			alert("Player 2 wins!");
-			bool = true;
-			oncewin = true;
-		}
-	}
 
-	if (a[1][0]==a[1][1] && a[1][1]==a[1][2])
-	{
-		if (a[1][0]==1)
+		if (a[1][0]==a[1][1] && a[1][1]==a[1][2])
 		{
-			alert("Player 1 wins!");
-			bool = true;
-			oncewin = true;
+			if (a[1][0]==1)
+			{
+				alert("Player 1 wins!");
+				bool = true;
+				oncewin = true;
+			}
+			else if(a[1][0]==2)
+			{
+				alert("Player 2 wins!");
+				bool = true; 
+				oncewin = true;
+			}
 		}
-		else if(a[1][0]==2)
-		{
-			alert("Player 2 wins!");
-			bool = true; 
-			oncewin = true;
-		}
-	}
 
-	if (a[2][0]==a[2][1] && a[2][1]==a[2][2])
-	{
-		if (a[2][0]==1)
+		if (a[2][0]==a[2][1] && a[2][1]==a[2][2])
 		{
-			alert("Player 1 wins!");
-			bool = true; 
-			oncewin = true;
+			if (a[2][0]==1)
+			{
+				alert("Player 1 wins!");
+				bool = true; 
+				oncewin = true;
+			}
+			else if(a[2][0]==2)
+			{
+				alert("Player 2 wins!");
+				bool = true; 
+				oncewin = true;
+			}
 		}
-		else if(a[2][0]==2)
-		{
-			alert("Player 2 wins!");
-			bool = true; 
-			oncewin = true;
-		}
-	}
 
-	if (a[0][0]==a[1][0] && a[1][0]==a[2][0])
-	{
-		if (a[0][0]==1)
+		if (a[0][0]==a[1][0] && a[1][0]==a[2][0])
 		{
-			alert("Player 1 wins!");
-			bool = true;
-			 oncewin = true;
+			if (a[0][0]==1)
+			{
+				alert("Player 1 wins!");
+				bool = true;
+				 oncewin = true;
+			}
+			else if(a[0][0]==2)
+			{
+				alert("Player 2 wins!");
+				bool = true; 
+				oncewin = true;
+			}
 		}
-		else if(a[0][0]==2)
-		{
-			alert("Player 2 wins!");
-			bool = true; 
-			oncewin = true;
-		}
-	}
 
-	if (a[0][1]==a[1][1] && a[1][1]==a[2][1])
-	{
-		if (a[0][1]==1)
+		if (a[0][1]==a[1][1] && a[1][1]==a[2][1])
 		{
-			alert("Player 1 wins!");
-			bool = true; 
-			oncewin = true;
+			if (a[0][1]==1)
+			{
+				alert("Player 1 wins!");
+				bool = true; 
+				oncewin = true;
+			}
+			else if(a[0][1]==2)
+			{
+				alert("Player 2 wins!");
+				bool = true; 
+				oncewin = true;
+			}
 		}
-		else if(a[0][1]==2)
-		{
-			alert("Player 2 wins!");
-			bool = true; 
-			oncewin = true;
-		}
-	}
 
-	if (a[0][2]==a[1][2] && a[1][2]==a[2][2])
-	{
-		if (a[0][2]==1)
+		if (a[0][2]==a[1][2] && a[1][2]==a[2][2])
 		{
-			alert("Player 1 wins!");
-			bool = true; 
-			oncewin = true;
+			if (a[0][2]==1)
+			{
+				alert("Player 1 wins!");
+				bool = true; 
+				oncewin = true;
+			}
+			else if(a[0][2]==2)
+			{
+				alert("Player 2 wins!");
+				bool = true; 
+				oncewin = true;
+			}
 		}
-		else if(a[0][2]==2)
-		{
-			alert("Player 2 wins!");
-			bool = true; 
-			oncewin = true;
-		}
-	}
 
-	if (a[0][0]==a[1][1] && a[1][1]==a[2][2])
-	{
-		if (a[0][0]==1)
+		if (a[0][0]==a[1][1] && a[1][1]==a[2][2])
 		{
-			alert("Player 1 wins!");
-			bool = true; 
-			oncewin = true;
+			if (a[0][0]==1)
+			{
+				alert("Player 1 wins!");
+				bool = true; 
+				oncewin = true;
+			}
+			else if(a[0][0]==2)
+			{
+				alert("Player 2 wins!");
+				bool = true;
+				oncewin = true;
+			}
 		}
-		else if(a[0][0]==2)
-		{
-			alert("Player 2 wins!");
-			bool = true;
-			oncewin = true;
-		}
-	}
 
-	if (a[0][2]==a[1][1] && a[1][1]==a[2][0])
-	{
-		if (a[0][2]==1)
+		if (a[0][2]==a[1][1] && a[1][1]==a[2][0])
 		{
-			alert("Player 1 wins!");
-			bool = true;
-			oncewin = true;
+			if (a[0][2]==1)
+			{
+				alert("Player 1 wins!");
+				bool = true;
+				oncewin = true;
+			}
+			else if(a[0][2]==2)
+			{
+				alert("Player 2 wins!");
+				bool = true;
+				oncewin = true;
+			}
 		}
-		else if(a[0][2]==2)
-		{
-			alert("Player 2 wins!");
-			bool = true;
-			oncewin = true;
-		}
-	}
 
-	if (counter == 9 && bool == false)
-	{
-		alert("Match results in a draw. Press refresh to start again.");
+		if (counter == 9 && bool == false)
+		{
+			alert("Match results in a draw. Press refresh to start again.");
+		}
 	}
 }
