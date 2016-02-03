@@ -2,6 +2,7 @@ var canvas = document.getElementById('gameSpace'); // fetching canvas as a varia
 var context = canvas.getContext('2d'); // everything is drawn using context
 var counter = 0;
 var oncewin = false;
+var validmove = false;
 var sum = 0;
 
 context.beginPath();
@@ -57,7 +58,7 @@ firstturn();
 
 function firstturn()
 {
-	var delay=600; //.6 seconds
+	var delay=300; //.6 seconds
 
 	setTimeout(function()
 	{
@@ -71,6 +72,7 @@ function firstturn()
 
 function makeOwn()
 {
+	var delay=200; //.15 seconds
 	context.font = "90px Verdana";
 	context.fillStyle = "#ff0000";
 
@@ -471,6 +473,7 @@ function clicker (event)
 				{
 					context.fillText("O",15,80);
 				}
+				validmove = true;
 
 			}
 			if (cy>100 && cy<200 && a[1][0]==0)
@@ -484,6 +487,8 @@ function clicker (event)
 				}
 				else
 					context.fillText("O",15,180);
+
+				validmove = true;
 			}
 			if (cy>200 && cy<300 && a[2][0]==0)
 			{
@@ -496,6 +501,8 @@ function clicker (event)
 				}
 				else
 					context.fillText("O",15,280);
+
+				validmove = true;
 			}
 		}
 
@@ -512,6 +519,8 @@ function clicker (event)
 				}
 				else
 					context.fillText("O",115,80);
+
+				validmove = true;
 			}
 			if (cy>100 && cy<200 && a[1][1]==0)
 			{
@@ -524,6 +533,8 @@ function clicker (event)
 				}
 				else
 					context.fillText("O",115,180);
+
+				validmove = true;
 			}
 			if (cy>200 && cy<300  && a[2][1]==0)
 			{
@@ -536,6 +547,8 @@ function clicker (event)
 				}
 				else
 					context.fillText("O",115,280);
+
+				validmove = true;
 			}
 		}
 
@@ -552,6 +565,8 @@ function clicker (event)
 				}
 				else
 					context.fillText("O",215,80);
+
+				validmove = true;
 			}
 			if (cy>100 && cy<200 && a[1][2]==0)
 			{
@@ -564,6 +579,8 @@ function clicker (event)
 				}
 				else
 					context.fillText("O",215,180);
+
+				validmove = true;
 			}
 			if (cy>200 && cy<300 && a[2][2]==0)
 			{
@@ -576,6 +593,8 @@ function clicker (event)
 				}
 				else
 					context.fillText("O",215,280);
+
+				validmove = true;
 			}
 		}
 		check();
@@ -588,8 +607,9 @@ function clicker (event)
 			}
 		}
 
-		if (!oncewin)
+		if (!oncewin && validmove)
 		{
+			validmove = false;
 			makeOwn();
 		}
 		check();
