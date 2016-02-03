@@ -1,0 +1,73 @@
+body
+{
+	background-image:url(../../images/bg_main.jpg);
+	background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1
+{
+	font-size: 65px; 
+	font-family: "Callibri"; 
+	color:#bfbf00;
+}
+
+.hard
+{
+	font-size: 25px; 
+	font-family: "Callibri"; 
+	color: #ffbf00;	
+	text-align: center;
+}
+
+.button-left
+{
+	background-color: black;
+	color: #ffffff;
+	font-family: "NanumGothic";
+	text-align: center;
+	font-size: 20px;
+	margin-top: 10px;
+	width: 110px;
+	border-radius: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	float:left;
+	transition: background-color 0.5s;
+	-webkit-transition: background-color 0.5s;
+	-moz-transition: background-color 0.5s;
+	-o-transition: background-color 0.5s;
+}
+
+.button-right
+{
+	background-color: black;
+	color: #ffffff;
+	font-family: "NanumGothic";
+	text-align: center;
+	font-size: 20px;
+	margin-top: 10px;
+	width: 110px;
+	border-radius: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	float:right;
+	transition: background-color 0.5s;
+	-webkit-transition: background-color 0.5s;
+	-moz-transition: background-color 0.5s;
+	-o-transition: background-color 0.5s;
+}
+
+.button-left:hover
+{
+	background-color: #3d253d;
+	color: #facc2e;
+}
+
+.button-right:hover
+{
+	background-color: #3d253d;
+	color: #facc2e;
+}
