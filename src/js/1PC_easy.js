@@ -32,8 +32,10 @@ context.lineWidth = "8";
 context.stroke();
 context.strokeStyle = "#101010";
 context.closePath();
-
-alert("I start first with my favourite 'O'. Try beatin' me!");
+window.onload=function()
+{
+	alert("I start first with my favourite 'O'. Try beatin' me!");
+}
 
 var a = new Array(3);
 for(var i=0;i<3;i++)
