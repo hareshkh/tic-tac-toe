@@ -33,6 +33,7 @@ context.lineWidth = "8";
 context.stroke();
 context.strokeStyle = "#101010";
 context.closePath();
+
 window.onload=function()
 {
 	alert("I start first with my favourite 'O'. Try beatin' me!");
@@ -58,7 +59,7 @@ firstturn();
 
 function firstturn()
 {
-	var delay=300; //.6 seconds
+	var delay=300; //.3 seconds
 
 	setTimeout(function()
 	{
@@ -72,7 +73,7 @@ function firstturn()
 
 function makeOwn()
 {
-	var delay=200; //.15 seconds
+	var delay=200; //.2 seconds
 	context.font = "90px Verdana";
 	context.fillStyle = "#ff0000";
 

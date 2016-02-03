@@ -73,7 +73,7 @@ function firstturn()
 
 function makeOwn()
 {
-	var delay = 200 //.15 seconds
+	var delay = 200 //.2 seconds
 	context.font = "90px Verdana";
 	context.fillStyle = "#ff0000";
 
